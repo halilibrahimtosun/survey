@@ -1,0 +1,16 @@
+{
+  "name": "Survey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d Survey"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://halilibrahimtosun.github.io/survey",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

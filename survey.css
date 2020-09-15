@@ -1,0 +1,216 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background:rgb(255, 98, 0);
+    font-family: "Poppins" ,sans-serif;
+}
+#title{
+    text-align: center;
+}
+#description{
+    text-align:center;
+    margin-top:1rem;
+}
+.survey-form {
+    max-width: 70%;
+    margin:0 auto;
+}
+.form {
+    margin:0 auto;
+    display:flex;
+    flex-direction: column  ;
+}
+#name-label {
+    font-size:1.1em;
+    font-weight: bolder;
+}
+#name{
+    padding:0.3rem 0.75rem;
+    margin-top:.55rem;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+    
+}
+#surname {
+    padding:0.3rem 0.75rem;
+    margin-top:.55rem;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+}
+#surname-label {
+    font-size:1.1em;
+    font-weight: bolder;
+}
+#number-label {
+    font-size:1.1em;
+    font-weight: bolder;
+}
+
+#number{
+    padding:0.3rem 0.75rem;
+    margin-top:.55rem;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+}
+#email-label {
+    font-size:1.1em;
+    font-weight: bolder;
+}
+
+#email {
+    padding:0.3rem 0.75rem;
+    margin-top:.55rem;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+}
+#label {
+    font-size:1.1rem;
+    font-weight: bolder;
+   
+  
+}
+#dropdown{
+    padding:0.765rem;
+    color:rgba(0,0,0,0.6);
+    font-size:0.9rem;
+    margin-top:1rem;
+    width:100%;
+    border-radius:0.25rem;
+    border:1.4px solid black;
+   
+
+    
+    
+    
+
+}
+.para p {
+    padding:.875rem;
+    padding-left:0;
+    font-weight: bolder;
+    font-size:1.1rem;
+}
+.question{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.question  label{
+   
+    font-size:1.2rem;
+   font-weight:900;
+   
+   margin-right: .75rem;
+   
+}
+.q-licence{
+ 
+   margin-right: .75rem;
+   min-height: 1.25rem;
+   min-width: 1.25rem;
+}
+
+.question label:first-child{
+    margin-right: 1rem;
+}
+.select-licence p {
+    font-size:1.2rem;
+    font-weight: bolder;
+    margin-top:1.2rem;
+}
+.licence{
+    margin-right: .775rem;
+    height: 2rem;
+    width:1.2rem;
+    
+}
+
+.select-licence label {
+    font-size:1.2rem;
+    display: flex;
+    align-items:center;
+    margin-bottom:0.5rem;
+    font-weight: bolder;
+   
+}
+.form {
+    font-weight: bolder;
+    font-size:1.1rem;
+    margin-bottom:1rem;
+}
+
+#comment {
+    font-size:1.2rem;
+    padding:0.4rem;
+}
+
+.form p{
+    margin-bottom: 1rem;
+}
+
+#submit {
+    color:floralwhite;
+    background: green;
+    border-color: transparent;
+    cursor:pointer;
+    min-height: 30%;
+    padding:0.75rem;
+    font-size:1.2rem;
+    letter-spacing: 0.665rem;
+    transition:background 200ms ease-in;
+    margin-bottom:40%;
+    border-radius: 2rem;
+}
+
+
+#submit:focus{
+    outline:0;
+}
+#submit:active {
+    box-shadow:0 0 0 rgb(54, 194, 82);
+    transform:translate(2px, 2px);
+}
+.invisible {
+    display:none;
+}
+@media screen and (min-width: 768px) {
+    #survey-form {
+        display:table;
+        margin:0 0 ;
+        margin-left:10%;
+    }
+    .form {
+        display: flex;
+    }
+    
+    label, input {
+        display: table-cell;
+        
+        
+    }
+    .form label {
+        max-width: 30%;
+    }
+    
+    .select-licence label {
+       
+        padding-right: 3rem;
+        
+        
+        
+    }
+    #licence {
+        height: 1rem;
+        
+    }
+    .form p {
+        margin-top:3rem;
+    }
+    #comment {
+        width: 600px;
+
+    }
+}
