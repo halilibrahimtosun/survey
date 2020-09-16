@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="survey.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header id="title">
+        <h1>Driving Licence Form</h1>
+        <p id="description"> Just fill the blanks.</p>
+    </header>
+    <form action="" id="survey-form" class="survey-form">
+        <div class="form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" required placeholder="name" class="form-control">
+        </div>
+        <div class="form"> 
+        <label for="surname" id="surname-label">Surname</label>
+        <input type="text" name="surname" id="surname" required placeholder="surname"class="form-control">
+        </div>
+        <div class="form"> 
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="age" id="number" required placeholder="age" min="18" max="" class="form-control">
+        </div>
+        <div class="form">
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="E-mail" minlength="10" maxlength="100"class="form-control">
+        </div>
+        <div class="form">
+        <label for="dropdown" id="label">Choose your car:</label>
+            <select name="cars" id="dropdown">
+                <option value="select">---Select your car---</option>
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes Benz</option>
+                <option value="toyota">Toyota</option>
+
+            </select>
+        </div>
+        <div class="para">
+            <p>Do you have a driving licence ?</p>
+        </div>
+        <div class="question">
+            <label for="yesorno"><input type="radio" class="q-licence" id="q-licence-yes" name="answer" value="Yes">Yes</label>
+            <label for="yesorno"><input type="radio" class="q-licence" id="q-licence-no" name="answer" value="No">No</label>
+        </div>
+        <div class="select-licence invisible">
+            <p> Which ones do you have ?</p>
+            <label for="licence" ><input  type="checkbox" id="licenceA" class="licence" name="user-licence" value="A">A</label>
+            <label for="licence"><input  type="checkbox" id="licenceB" class="licence" name="user-licence" value="B">B</label>
+            <label for="licence"><input   type="checkbox" id="licenceC" class="licence" name="user-licence" value="C">C</label>
+            <label for="licence"><input  type="checkbox" id="licenceD" class="licence" name="user-licence" value="D">D</label>
+            <label for="licence"><input   type="checkbox" id="licenceM1" class="licence" name="user-licence" value="M1">M1</label>
+            <label for="licence"><input   type="checkbox" id="licenceM2" class="licence" name="user-licence" value="M2">M2</label>     
+        </div>
+        <div class="form">
+            <p>Any comments or suggestions ?</p>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+   
+    <script src="survey.js"></script>
+</body>
+</html>
