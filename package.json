@@ -1,10 +1,10 @@
 {
-  "name": "Survey",
+  "name": "survey",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d Survey"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
